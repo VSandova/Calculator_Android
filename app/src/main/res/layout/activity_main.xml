@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="ax^2+bx+c=0"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:visibility="visible">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/TextView"
+        android:gravity="center"
+        android:text="Въведи"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/edit_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView1"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="a="
+        android:textSize="24sp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text1"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="b="
+        android:textSize="24sp"
+        >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text2"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="c="
+        android:textSize="24sp">
+
+    </EditText>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text3"
+        android:text="="
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/btn"
+        android:hint="Резултат"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible">
+
+    </TextView>
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView2"
+        android:text="История"
+        android:textSize="30dp"/>
+
+
+</RelativeLayout>
